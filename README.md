@@ -10,7 +10,7 @@ This simple test is designed to test your thought process and ability to follow 
 - Send a message letting us know when you estimate to have the ttest complete
 - Complete the code test
 - Deploy to Netlify
-- Create pull request on this repository to let us know youve finished.
+- Send the Netlify with a description of how you did what you did to developers@wearedamage.com
 
 **What we are looking for:**
 
