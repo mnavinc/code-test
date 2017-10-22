@@ -164,7 +164,8 @@ footer img {
 .navbar-toggle {
 	.sr-only.close,
 	&.active .sr-only.open{
-		display:none
+		display:none;
+		cursor:pointer;
 	}
 	&.active .sr-only.close{
 		display:block;
