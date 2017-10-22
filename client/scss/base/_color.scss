@@ -28,6 +28,9 @@ $dribbble: #EA4C89!default;
 $bodycolor: $secondary!default;
 $headingcolor: $secondary!default;
 $line: #D8D8D8!default;
+$darkBlue: #0E3757!default;
+$peach: #F56A75!default;
+$grey: #7E7E7E!default
 //// Into an array
 $colors: (
 	primary: $primary,
@@ -49,7 +52,10 @@ $colors: (
 	youtube: $youtube,
 	dribbble: $dribbble,
 	bodycolor: $bodycolor,
-	headingcolor: $headingcolor
+	headingcolor: $headingcolor,
+	darkBlue: $darkBlue,
+	peach: $peach,
+	grey: $grey
 ) !default;
 
 

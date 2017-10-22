@@ -211,6 +211,10 @@ textarea {
     -webkit-appearance: none;
     overflow: auto;
     padding:$form-textarea-padding;
+    &:required {
+	    background: $form-input-bg-color url($form-input-required-icon) no-repeat right 14px center;
+	    background-size:8px;
+    }
 }
 input[type="file"] {
     min-height: $form-input-height;

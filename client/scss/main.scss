@@ -33,3 +33,215 @@
 @import "helpers/responsive-embed";
 //// Helpers for screen size based tasks, like show/hide
 @import "helpers/responsive-utilities";
+
+*{
+	margin:0;
+	padding:0
+}
+html {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+body{
+	min-width:300px;
+	font-size:14px;
+	overflow-x:hidden;
+	text-align:center;
+	width:100%;
+	margin:auto
+}
+nav {
+	ul {
+  		margin: 0;
+  		padding: 0;
+  		list-style: none;
+	}
+	li { 
+		display: inline-block; 
+	    color: #0E3757;
+	}
+	li a {
+	    display: block;
+	    padding: 10px 15px;
+	    text-decoration: none;
+	    font-size: 14px;
+	    color:inherit;
+	}
+	li:hover,
+	li.active{
+		color:#fff;
+		border-radius:3px;
+		background-color:#F56A75;
+	}
+  	.navbar-header {
+	    display: inline-block;
+	    width: 200px;
+	}
+	.navbar-header img {
+	    width: 100px;
+	    margin: 10px auto;
+	}
+	.navbar-collapse{
+		display:inline-block;
+		width:calc(100% - 205px);
+		text-align:right;
+		color:#0E3757;
+	}
+	
+}
+.justify-content-center{
+	margin:auto
+}
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	border:none;
+	border-radius:3px
+}
+button.new{
+	padding:10px 15px;
+}
+valign{
+	vertical-align:middle
+}
+.badge{
+	position:relative;
+}
+.badge .ticker {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 26px;
+    right: 88px;
+    line-height: 40px;
+}
+.blockQuote{
+	border-top:1px solid #7e7e7e;
+	border-bottom:1px solid #7e7e7e;
+}
+.blockQuote .quote{
+	vertical-align:top;
+}
+.blockQuote p{
+	line-height:42px
+}
+.quote-text{
+	padding-left:34px;
+}
+.quote-text span{
+	position:absolute;
+	left:-34px;
+}
+form .input-group {
+    float: right;
+    clear: both;
+    width: 400px;
+}
+textarea:required {
+    background-size: 8px;
+    background-position:97% 5%;
+    min-height:100px;
+}
+footer{
+	color:#fff
+}
+footer img {
+    width: 100px;
+}
+#main{
+	width:100%;
+	position:relative
+}
+.navbar-toggle {
+	.sr-only.close,
+	&.active .sr-only.open{
+		display:none
+	}
+	&.active .sr-only.close{
+		display:block;
+		z-index:99
+	}
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    a {
+	    text-align: center;
+	    padding: 10px;
+	    margin: auto 10%;
+	    text-decoration: none;
+	    font-size: 18px;
+	    color: #FFF;
+	    display: block;
+	    -webkit-transition: 0.3s;
+	    -o-transition: 0.3s;
+	    transition: 0.3s;
+	}
+	a:hover, .offcanvas a:focus{
+	    color: #FFF;
+	    background-color:#F56A75;
+	    border-radius:3px
+	}
+	.closebtn {
+	    position: absolute;
+	    top: 0;
+	    left: 25px;
+	    font-size: 36px;
+	    margin-right: 50px;
+	}
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+@media only screen and (max-width: 768px){
+	.leftAlignmd{
+		text-align:center !important
+	}
+	button.new {
+	    width: calc(100% - 30px);
+	    margin-top: 10px;
+	}
+	.badge .ticker {
+		right:39%
+	}
+	.badge-outer{
+		margin:40px auto 0
+	}
+	.quote-text{
+		padding-left:10%;
+		position:relative;
+	}
+	.quote-text span{
+		position:absolute;
+		left:5%;
+	}
+	form .input-group {
+	    float: none;
+	    clear: both;
+	    width: 100%;
+	}
+	form .input-group.text-right {
+	    text-align: center !important;
+	}
+	footer img {
+	    padding-top:10px
+	}
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
