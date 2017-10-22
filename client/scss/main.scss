@@ -152,6 +152,11 @@ footer{
 footer img {
     width: 100px;
 }
+.bg-peach{ 
+	.fc-white{
+		color:#fff !important;
+	}
+}
 #main{
 	width:100%;
 	position:relative
@@ -235,9 +240,6 @@ footer img {
 	    float: none;
 	    clear: both;
 	    width: 100%;
-	}
-	.bg-peach .fc-white{
-		color:#FFF;
 	}
 	form .input-group.text-right {
 	    text-align: center !important;
